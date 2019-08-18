@@ -1,15 +1,14 @@
 <?php
-include_once '/var/www/html/module2/libraries-with-DB/function/function.php';
+include_once '/var/www/html/module2/libraries-with-DB/function/Libraries.php';
+$libraries = new Libraries(openConn());
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $cateName = "'" . $_POST['cateName'] . "'";
     $bookExist = $_POST['bookExist'];
     $bookLoaned = $_POST['bookLoaned'];
-    $conn = openConn();
 
     $mysql = "INSERT INTO categorys (cateName, bookExist,loaned) VALUES (" . $cateName . "," . $bookExist . "," . $bookLoaned . ");";
-    echo $mysql;
-    echo "<br>";
-    addCategory($conn, $mysql);
+    $libraries->addCategory($mysql);
+
 }
 
 ?>
@@ -23,7 +22,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <h1>LIBRARIES MANAGER</h1><br>
-    <h2>Home|Book|Reader|Borrow Books|Categories</h2>
+    <h2><a href="../index.php">Home</a>
+        |Book|Reader|Borrow Books|Categories</h2>
 </head>
 <body>
 <h3> Create Categories</h3>

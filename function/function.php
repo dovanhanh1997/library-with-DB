@@ -5,4 +5,7 @@ include_once '/var/www/html/module2/libraries-with-DB/database/database.php';
 function addCategory($conn,$data){
     $libraries = new Libraries();
     $libraries->addCategory($conn,$data);
+}function updateCategory($conn,$data){
+    $libraries = new Libraries();
+    $libraries->updateCategory($conn,$data);
 }

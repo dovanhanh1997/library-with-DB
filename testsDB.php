@@ -1,20 +1,25 @@
 <?php
-include_once "database.php";
-
+include_once '/var/www/html/module2/libraries-with-DB/function/Libraries.php';
 $conn = openConn();
-var_dump($conn);
-if ($conn->connect_error == null){
-    echo "Successfully";
-}
-else{
-    echo $conn->connect_error;
-}
-echo '<br>';
+$sql = "SELECT * FROM categorys";
+$result = $conn->query($sql);
+$result_one = mysqli_query($conn,$sql);
 
-$sql = "INSERT INTO books(bookName, loan, exist, total)
-        VALUES ('Nudge','4','5','9')";
-if (mysqli_query($conn,$sql)){
-    echo "ADD DATA SUCCESS";
-}else{
-    echo "ERROR";
+function render($column)
+{
+    global $conn, $result;
+
+
+    if ($result->num_rows > 0) {
+        while ($row = $result->fetch_assoc()) {
+            echo $row[$column];
+        }
+    }
 }
+
+render("cateNumber");echo '<br>';
+var_dump($result);echo '<br>';
+var_dump($result_one);?>
+
+
+
