@@ -21,7 +21,17 @@ function add(DBCategory $category)
 function delete(DBCategory $category)
 {
     $category->cateNumber = $_GET['id'];
-    $category->delete();
+    ?>
+    <script>
+        let cf = '';
+        cf = confirm("Do you want to delete category");
+        if (cf === true) {
+            <?php $category->delete();?>
+            alert("Delete category success");
+            window.location.replace("index.php")
+
+        }
+    </script><?php
 }
 
 function update(DBCategory $category)
