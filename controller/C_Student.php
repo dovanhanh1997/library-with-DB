@@ -20,10 +20,14 @@ class C_Student
             $name = $_POST['name'];
             $pass = $_POST['pass'];
             $email = $_POST['email'];
-
             $student = new Student($name, $pass, $email);
             $this->DBStudent->add($student);
         }
+    }
+
+    public function studentsList(){
+        $students = $this->DBStudent->getStudent();
+        include 'view/student/list.php';
     }
 
 
@@ -31,7 +35,7 @@ class C_Student
     {
         session_start();
         $_SESSION['status_login'] = false;
-        include 'view/student/login.php';
+        include 'view/login.php';
         if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             $_SESSION['name'] = $_POST['name'];
             $_SESSION['pass'] = $_POST['password'];
@@ -51,7 +55,7 @@ class C_Student
     public function loginChecked()
     {
         if ($_SESSION['status_login']) {
-            header('location: view/student/loginSuccess.php');
+            header('location: view/loginSuccess.php');
         } else {
             $this->login();
         }

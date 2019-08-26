@@ -31,4 +31,8 @@ class DBStudent
             }
         return $students;
     }
+
+    public function update(){
+
+    }
 }

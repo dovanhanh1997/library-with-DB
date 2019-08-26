@@ -10,3 +10,5 @@
     </label>
     <button type="submit">Create</button>
 </form>
+
+<a href="index.php?page=category">Category List</a>

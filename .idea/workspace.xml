@@ -2,36 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="58aefffd-bdb0-4654-9bd5-8888da8ad0d4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/controller/C_Category.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/controller/C_Student.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/model/class/Category.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/model/class/Student.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/model/database/DBCategory.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/model/database/DBConnect.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/model/database/DBStudent.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/view/category/add.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/view/student/add.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/view/student/login.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/view/student/loginSuccess.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/view/category/list.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/view/category/update.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/view/loginSuccess.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/view/logout.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/view/logoutSuccess.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/view/student/list.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/books/addBook.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/books/bookList.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/category/addCategory.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/category/dropCategory.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/category/updateCategory.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/database/database.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/function/Libraries.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/function/function.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/index.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/testsDB.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/library/Database/DBCategory.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/library/Database/DBConnect.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/library/Function/category.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/library/Index/Category/add.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/library/Index/Category/delete.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/library/Index/Category/index.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/library/Index/Category/update.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/controller/C_Category.php" beforeDir="false" afterPath="$PROJECT_DIR$/controller/C_Category.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controller/C_Student.php" beforeDir="false" afterPath="$PROJECT_DIR$/controller/C_Student.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/class/Category.php" beforeDir="false" afterPath="$PROJECT_DIR$/model/class/Category.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/database/DBCategory.php" beforeDir="false" afterPath="$PROJECT_DIR$/model/database/DBCategory.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/database/DBStudent.php" beforeDir="false" afterPath="$PROJECT_DIR$/model/database/DBStudent.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/category/add.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/category/add.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/student/add.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/student/add.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/student/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/login.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/student/loginSuccess.php" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -52,16 +39,16 @@
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Customer-Manage" />
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/view" />
       <recent name="$PROJECT_DIR$/view/category" />
       <recent name="$PROJECT_DIR$/view/student" />
       <recent name="$PROJECT_DIR$/library/model" />
       <recent name="$PROJECT_DIR$/library/Index/Category" />
-      <recent name="$PROJECT_DIR$/library/demo" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -88,7 +75,11 @@
       <updated>1566028708094</updated>
       <workItem from="1566028709277" duration="37537000" />
       <workItem from="1566202070973" duration="25614000" />
-      <workItem from="1566550944718" duration="9463000" />
+      <workItem from="1566550944718" duration="9524000" />
+      <workItem from="1566637096309" duration="1107000" />
+      <workItem from="1566638237262" duration="18161000" />
+      <workItem from="1566741753142" duration="603000" />
+      <workItem from="1566803405702" duration="5438000" />
     </task>
     <servers />
   </component>

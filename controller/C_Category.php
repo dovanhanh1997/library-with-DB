@@ -26,4 +26,37 @@ class C_Category
         }
     }
 
+    public function render()
+    {
+        $categories = $this->DBCategory->getCategory();
+        include 'view/category/list.php';
+    }
+
+    public function edit()
+    {
+        if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+            $cateNumber = $_POST['id'];
+            $name = $_POST['name'];
+            $exist = $_POST['exist'];
+            $loaned = $_POST['loaned'];
+
+            $category = new Category($name, $exist, $loaned);
+            $this->DBCategory->update($cateNumber, $category);
+            header('location: index.php?page=category');
+        } else {
+            include 'view/category/update.php';
+        }
+    }
+
+    public function delete()
+    {
+        if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+            $id = $_POST['id'];
+            $this->DBCategory->delete($id);
+            header('location: index.php?page=category');
+        } else {
+            include 'view/category/delete.php';
+        }
+    }
 }
+
