@@ -32,7 +32,14 @@ class DBStudent
         return $students;
     }
 
-    public function update(){
-
+    public function update($id,$student){
+        $sqlStm = "UPDATE students SET name=:name,pass=:pass,email=:email WHERE studentNumber=:studentNumber;";
+        $query = $this->connection->prepare($sqlStm);
+        $query->bindParam(':name',$student->name);
+        $query->bindParam(':pass',$student->pass);
+        $query->bindParam(':email',$student->email);
+        $query->bindParam(':studentNumber',$id);
+        $query->execute();
     }
+
 }

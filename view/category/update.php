@@ -1,5 +1,4 @@
 <?php
-$id = $_GET['id'];
 ?>
 
 <h2>Update Category Info</h2>

@@ -2,23 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="58aefffd-bdb0-4654-9bd5-8888da8ad0d4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/view/category/list.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/view/category/update.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/view/loginSuccess.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/view/logout.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/view/logoutSuccess.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/view/student/list.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/view/student/update.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/controller/C_Category.php" beforeDir="false" afterPath="$PROJECT_DIR$/controller/C_Category.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/controller/C_Student.php" beforeDir="false" afterPath="$PROJECT_DIR$/controller/C_Student.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/class/Category.php" beforeDir="false" afterPath="$PROJECT_DIR$/model/class/Category.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/database/DBCategory.php" beforeDir="false" afterPath="$PROJECT_DIR$/model/database/DBCategory.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/model/database/DBStudent.php" beforeDir="false" afterPath="$PROJECT_DIR$/model/database/DBStudent.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/view/category/add.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/category/add.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/view/student/add.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/student/add.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/view/student/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/login.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/view/student/loginSuccess.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/category/update.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/category/update.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/loginSuccess.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/loginSuccess.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/student/list.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/student/list.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -79,7 +71,7 @@
       <workItem from="1566637096309" duration="1107000" />
       <workItem from="1566638237262" duration="18161000" />
       <workItem from="1566741753142" duration="603000" />
-      <workItem from="1566803405702" duration="5438000" />
+      <workItem from="1566803405702" duration="12693000" />
     </task>
     <servers />
   </component>

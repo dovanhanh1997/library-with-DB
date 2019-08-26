@@ -45,6 +45,8 @@ class C_Category
             header('location: index.php?page=category');
         } else {
             include 'view/category/update.php';
+            $id = $_GET['id'];
+
         }
     }
 

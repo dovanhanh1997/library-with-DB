@@ -25,11 +25,30 @@ class C_Student
         }
     }
 
-    public function studentsList(){
+    public function update()
+    {
+        if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+            $name = $_POST['name'];
+            $pass = $_POST['pass'];
+            $email = $_POST['email'];
+            $image = $_POST['image'];
+            $blackHistory = $_POST['blackHistory'];
+            $id = $_POST['id'];
+
+            $student = new Student($name, $pass, $email);
+            $this->DBStudent->update($id, $student);
+            header('location: index.php?page=students');
+        } else {
+            include 'view/student/update.php';
+
+        }
+    }
+
+    public function studentsList()
+    {
         $students = $this->DBStudent->getStudent();
         include 'view/student/list.php';
     }
-
 
     public function login()
     {
@@ -57,7 +76,7 @@ class C_Student
         if ($_SESSION['status_login']) {
             header('location: view/loginSuccess.php');
         } else {
-            $this->login();
+            echo 'Error NAME or PASSWORD';
         }
     }
 }

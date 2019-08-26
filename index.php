@@ -38,7 +38,19 @@ if ($_SESSION['status_login']) {
         case 'students':
             $C_Student = new C_Student();
             if ($_SESSION['name'] == 'admin') {
-                $C_Student->studentsList();
+                $students = isset($_REQUEST['students']) ? $_REQUEST['students'] : null;
+                switch ($students) {
+                    case 'update':
+                        $C_Student->update();
+                        break;
+                    case 'create':
+                        $C_Student->create();
+                        break;
+                    default:
+                        $C_Student->studentsList();
+                        break;
+
+                }
             } else {
                 echo "<h1>You have not Permission</h1>";
             }
