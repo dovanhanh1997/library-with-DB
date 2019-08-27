@@ -17,7 +17,7 @@
         <td><?php echo $student->email ?></td>
         <td>Image</td>
         <td><a href="index.php?page=students&students=update&id=<?php echo $student->id ?>">Update</a></td>
-        <td><a href="index.php?page=students&students=update&id=<?php echo $student->id ?>">Delete</a></td>
+        <td><a href="index.php?page=students&students=delete&id=<?php echo $student->id ?>">Delete</a></td>
     </tr>
     <?php
     }

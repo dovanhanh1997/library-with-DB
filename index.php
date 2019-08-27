@@ -46,6 +46,9 @@ if ($_SESSION['status_login']) {
                     case 'create':
                         $C_Student->create();
                         break;
+                    case'delete':
+                        $C_Student->delete();
+                        break;
                     default:
                         $C_Student->studentsList();
                         break;

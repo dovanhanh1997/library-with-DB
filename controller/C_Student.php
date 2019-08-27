@@ -46,8 +46,21 @@ class C_Student
 
     public function studentsList()
     {
-        $students = $this->DBStudent->getStudent();
+        $students = $this->DBStudent->getStudents();
         include 'view/student/list.php';
+    }
+
+    public function delete()
+    {
+        if ($_SERVER['REQUEST_METHOD'] == 'GET') {
+            include 'view/student/delete.php';
+        } else {
+            $studentNumber = $_POST['id'];
+            $student = $this->DBStudent->getStudent($studentNumber);
+            $this->DBStudent->delete($student);
+            header('location: index.php?page=students');
+        }
+
     }
 
     public function login()
