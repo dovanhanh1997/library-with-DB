@@ -2,12 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="58aefffd-bdb0-4654-9bd5-8888da8ad0d4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/view/student/delete.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/controller/C_Book.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/model/class/Book.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/model/database/DBBook.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/view/books/list.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controller/C_Category.php" beforeDir="false" afterPath="$PROJECT_DIR$/controller/C_Category.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/controller/C_Student.php" beforeDir="false" afterPath="$PROJECT_DIR$/controller/C_Student.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/database/DBStudent.php" beforeDir="false" afterPath="$PROJECT_DIR$/model/database/DBStudent.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/view/student/list.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/student/list.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/database/DBCategory.php" beforeDir="false" afterPath="$PROJECT_DIR$/model/database/DBCategory.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/category/list.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/category/list.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/loginSuccess.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/loginSuccess.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -69,7 +74,7 @@
       <workItem from="1566638237262" duration="18161000" />
       <workItem from="1566741753142" duration="603000" />
       <workItem from="1566803405702" duration="14811000" />
-      <workItem from="1566904688175" duration="4713000" />
+      <workItem from="1566904688175" duration="16455000" />
     </task>
     <servers />
   </component>

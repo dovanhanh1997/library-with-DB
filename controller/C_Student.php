@@ -72,7 +72,7 @@ class C_Student
             $_SESSION['name'] = $_POST['name'];
             $_SESSION['pass'] = $_POST['password'];
 
-            $students = $this->DBStudent->getStudent();
+            $students = $this->DBStudent->getStudents();
             foreach ($students as $student) {
                 if ($_SESSION['name'] == $student->name) {
                     if ($_SESSION['pass'] == $student->pass) {

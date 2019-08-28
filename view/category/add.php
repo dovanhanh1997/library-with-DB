@@ -8,6 +8,7 @@
     Category Loaned: <label>
         <input type="number" name="loaned">
     </label>
+
     <button type="submit">Create</button>
 </form>
 

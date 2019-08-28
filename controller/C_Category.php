@@ -28,7 +28,7 @@ class C_Category
 
     public function render()
     {
-        $categories = $this->DBCategory->getCategory();
+        $categories = $this->DBCategory->getCategories();
         include 'view/category/list.php';
     }
 

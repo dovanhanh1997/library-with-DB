@@ -6,6 +6,8 @@ if ($_SESSION['status_login']) {
 
     <h3><a href="../index.php?page=category">Category list</a></h3>
     <h3><a href="../index.php?page=students">Student List</a></h3>
+    <h3><a href="../index.php?page=books">Book List</a></h3>
+
     <a href="logout.php">Log Out</a>
     <?php
 }

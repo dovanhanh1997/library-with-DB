@@ -2,6 +2,7 @@
 session_start();
 include_once 'controller/C_Student.php';
 include_once 'controller/C_Category.php';
+include_once 'controller/C_Book.php';
 
 if ($_SESSION['status_login'] != true) {
     $C_Student = new C_Student();
@@ -56,6 +57,15 @@ if ($_SESSION['status_login']) {
                 }
             } else {
                 echo "<h1>You have not Permission</h1>";
+            }
+            break;
+        case 'books':
+            $C_Book = new C_Book();
+            $books = isset($_REQUEST['books']) ? $_REQUEST['books'] : null;
+            switch ($books) {
+                default:
+                    $C_Book->render();
+                    break;
             }
             break;
         default:

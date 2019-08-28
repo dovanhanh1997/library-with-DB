@@ -20,7 +20,7 @@ class DBCategory
         return $query->execute();
     }
 
-    public function getCategory()
+    public function getCategories()
     {
         $sqlStm = "SELECT * FROM categories";
         $query = $this->connection->prepare($sqlStm);
@@ -33,6 +33,20 @@ class DBCategory
             $categories[] = $category;
         }
         return $categories;
+    }
+
+    public function getCategory($id){
+        $category = null;
+        $sqlStm = "SELECT * FROM categories WHERE cateNumber = :cateNumber;";
+        $query = $this->connection->prepare($sqlStm);
+        $query->bindParam(':cateNumber',$id);
+        $query->execute();
+        $result = $query->fetchAll();
+        foreach ($result as $row){
+            $category = new Category($row['name'],$row['exist'],$row['loaned']);
+            $category->cateNumber = $row['cateNumber'];
+        }
+        return $category;
     }
 
     public function update($cateNumber,$category){
