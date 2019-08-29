@@ -3,6 +3,7 @@ session_start();
 include_once 'controller/C_Student.php';
 include_once 'controller/C_Category.php';
 include_once 'controller/C_Book.php';
+include_once 'controller/C_Order.php';
 
 if ($_SESSION['status_login'] != true) {
     $C_Student = new C_Student();
@@ -16,6 +17,7 @@ if ($_SESSION['status_login'] != true) {
             break;
     }
 }
+
 if ($_SESSION['status_login']) {
     $page = isset($_REQUEST['page']) ? $_REQUEST['page'] : null;
     switch ($page) {
@@ -63,12 +65,26 @@ if ($_SESSION['status_login']) {
             $C_Book = new C_Book();
             $books = isset($_REQUEST['books']) ? $_REQUEST['books'] : null;
             switch ($books) {
+                case 'delete':
+                    $C_Book->delete();
+                    break;
+                case 'update':
+                    $C_Book->update();
+                    break;
                 case 'add':
                     $C_Book->add();
                     break;
                 default:
                     $C_Book->render();
                     break;
+            }
+            break;
+        case 'orders':
+            $C_Order = new C_Order();
+            $orders = isset($_REQUEST['orders']) ? $_REQUEST['orders'] : null;
+            switch ($orders) {
+                default:
+                    $C_Order->getList();
             }
             break;
         default:

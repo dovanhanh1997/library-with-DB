@@ -38,8 +38,38 @@ class C_Book
             $this->DBBook->add($book);
             header('location: index.php?page=books');
         }
-
     }
 
+    public function update(){
+        if ($_SERVER['REQUEST_METHOD'] == 'GET'){
+            $C_Category = new C_Category();
+            $categories = $C_Category->DBCategory->getCategories();
+            include 'view/books/update.php';
+        }
+        else{
+            $bookNumber = $_GET['id'];
+            $bookName = $_POST['bookName'];
+            $loan = (int)$_POST['loan'];
+            $exist = (int)$_POST['exist'];
+            $total = $loan + $exist;
+            $cateNumber = $_POST['cate'];
 
+            $book = new Book($bookName,$loan,$total);
+            $book->bookNumber = $bookNumber;
+            $book->cateNumber = $cateNumber;
+            $this->DBBook->edit($book);
+            header('location: index.php?page=books');
+        }
+    }
+
+    public function delete(){
+        if ($_SERVER['REQUEST_METHOD'] == 'GET'){
+            include 'view/books/delete.php';
+        }
+        else{
+            $bookNumber = $_POST['bookNumber'];
+            $this->DBBook->delete($bookNumber);
+            header('location: index.php?page=books');
+        }
+    }
 }
