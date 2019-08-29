@@ -16,10 +16,23 @@ class DBBook
         $result = $query->fetchAll();
         $books = [];
         foreach ($result as $row){
-            $book = new Book($row['bookName'],$row['loan'],$row['total'],$row['name']);
+            $book = new Book($row['bookName'],$row['loan'],$row['total']);
+            $book->cateName = $row['name'];
             $books[] = $book;
+
         }
         return $books;
+    }
+
+    public function add($book){
+        $stmt = "INSERT INTO books (bookName,loan,exist,total,cateNumber) VALUES (:bookName,:loan,:exist,:total,:cateNumber);";
+        $query = $this->connection->prepare($stmt);
+        $query->bindParam(':bookName',$book->name);
+        $query->bindParam(':loan',$book->loan);
+        $query->bindParam(':exist',$book->exist);
+        $query->bindParam(':total',$book->total);
+        $query->bindParam(':cateNumber',$book->cateNumber);
+        $query->execute();
     }
 
 }

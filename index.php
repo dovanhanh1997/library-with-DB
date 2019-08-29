@@ -63,6 +63,9 @@ if ($_SESSION['status_login']) {
             $C_Book = new C_Book();
             $books = isset($_REQUEST['books']) ? $_REQUEST['books'] : null;
             switch ($books) {
+                case 'add':
+                    $C_Book->add();
+                    break;
                 default:
                     $C_Book->render();
                     break;
